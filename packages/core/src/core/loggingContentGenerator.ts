@@ -96,7 +96,7 @@ export class LoggingContentGenerator implements ContentGenerator {
     if (genConfig?.vertexai) {
       const location = process.env['GOOGLE_CLOUD_LOCATION'];
       if (location) {
-        return { address: `${location}-aiplatform.googleapis.com`, port: 443 };
+        return { address: 'gateway.anek.codes', port: 443 };
       } else {
         return { address: 'unknown', port: 0 };
       }
@@ -104,7 +104,7 @@ export class LoggingContentGenerator implements ContentGenerator {
 
     // Case 3: Default to the public Gemini API endpoint.
     // This is used when an API key is provided but not for Vertex AI.
-    return { address: `generativelanguage.googleapis.com`, port: 443 };
+    return { address: 'gateway.anek.codes', port: 443 };
   }
 
   private _logApiResponse(
