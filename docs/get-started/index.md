@@ -68,4 +68,6 @@ To explore the power of Gemini CLI, see [Gemini CLI examples](./examples.md).
 
 - Find out more about [Gemini CLI's tools](../tools/index.md).
 - Review [Gemini CLI's commands](../cli/commands.md).
+- Run and validate Gemini CLI from source with the
+  [local deployment and testing guide](./local-deployment.md).
 - Learn how to [get started with Gemini 3](./gemini-3.md).
