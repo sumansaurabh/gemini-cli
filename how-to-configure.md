@@ -46,8 +46,10 @@ The CLI translates these values into the `@google/genai` base URL env vars.
 
 When determining the base URL, the CLI uses the first value it finds:
 
-- Gemini: `GEMINI_CLI_GEMINI_BASE_URL` -> `GEMINI_CLI_GATEWAY_URL` -> `GOOGLE_GEMINI_BASE_URL`
-- Vertex: `GEMINI_CLI_VERTEX_BASE_URL` -> `GEMINI_CLI_GATEWAY_URL` -> `GOOGLE_VERTEX_BASE_URL`
+- Gemini: `GEMINI_CLI_GEMINI_BASE_URL` -> `GEMINI_CLI_GATEWAY_URL` ->
+  `GOOGLE_GEMINI_BASE_URL`
+- Vertex: `GEMINI_CLI_VERTEX_BASE_URL` -> `GEMINI_CLI_GATEWAY_URL` ->
+  `GOOGLE_VERTEX_BASE_URL`
 
 ### URL format
 
@@ -58,7 +60,8 @@ When determining the base URL, the CLI uses the first value it finds:
 
 ## Authentication variables
 
-You still need to provide the normal authentication variables for the target API:
+You still need to provide the normal authentication variables for the target
+API:
 
 - Gemini API key
   - `GEMINI_API_KEY`
@@ -67,8 +70,8 @@ You still need to provide the normal authentication variables for the target API
   - `GOOGLE_CLOUD_PROJECT`
   - `GOOGLE_CLOUD_LOCATION`
 
-If you use `gcloud auth login` (or ADC), requests are routed through the internal
-Code Assist path and do not use the gateway env vars.
+If you use `gcloud auth login` (or ADC), requests are routed through the
+internal Code Assist path and do not use the gateway env vars.
 
 ## Low-level base URL overrides
 
@@ -99,3 +102,9 @@ These variables are not required for gateway routing, but are often useful:
 - If using Vertex, confirm `GOOGLE_CLOUD_LOCATION` is set and matches the
   upstream endpoint region.
 - Check gateway logs for incoming requests and headers.
+
+export GEMINI_CLI_VERTEX_BASE_URL="https://tunnel.penify.info" export
+GOOGLE_API_KEY="sdfsdfds" export GEMINI_CLI_CUSTOM_HEADERS="X-Trace-Id:
+gateway-test, x-portkey-virtual-key:
+ank_3e92acfe4f4cc0f6943d1c4a8d6bf239001651dbfa90a6e31dfa0e1430f21c1c" export
+GOOGLE_GENAI_USE_VERTEXAI="true"
