@@ -36,6 +36,8 @@ This documentation is organized into the following sections:
 - **[Configuration](./get-started/configuration.md):** Learn how to configure
   the CLI.
 - **[Installation](./get-started/installation.md):** Install and run Gemini CLI.
+- **[Local deployment and testing](./get-started/local-deployment.md):**
+  Run Gemini CLI from source and validate it with tests.
 - **[Examples](./get-started/examples.md):** Example usage of Gemini CLI.
 
 ### CLI
