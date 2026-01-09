@@ -10,7 +10,7 @@ and how to troubleshoot routing changes.
 |                                   Gemini CLI                                     |
 |                                                                                  |
 |  CLI entrypoint (packages/cli)                                                   |
-|  - loads settings + env                                                          |
+|  - loads settings + env                                                          |w
 |  - chooses auth mode                                                             |
 |  - builds Config object                                                          |
 +-----------------------------------+----------------------------------------------+

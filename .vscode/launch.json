@@ -16,6 +16,7 @@
       "env": {
         "GEMINI_SANDBOX": "false",
         "GEMINI_MODEL": "vertex-ai/gemini-3-flash-preview",
+        "GEMINI_DEFAULT_AUTH_TYPE": "vertex-ai",
         "GOOGLE_API_KEY": "ank_3e92acfe4f4cc0f6943d1c4a8d6bf239001651dbfa90a6e31dfa0e1430f21c1c",
         "GEMINI_CLI_CUSTOM_HEADERS": "X-Trace-Id: gateway-test, x-portkey-virtual-key: ank_3e92acfe4f4cc0f6943d1c4a8d6bf239001651dbfa90a6e31dfa0e1430f21c1c",
         "GEMINI_CLI_VERTEX_BASE_URL": "https://tunnel.penify.info",
