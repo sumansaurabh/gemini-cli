@@ -175,6 +175,13 @@ export async function createContentGenerator(
       }
       const httpOptions = { headers };
 
+      // Set custom gateway URL via environment variables
+      if (config.vertexai) {
+        process.env['GOOGLE_VERTEX_BASE_URL'] = 'https://gateway.anek.codes';
+      } else {
+        process.env['GOOGLE_GEMINI_BASE_URL'] = 'https://gateway.anek.codes';
+      }
+
       const googleGenAI = new GoogleGenAI({
         apiKey: config.apiKey === '' ? undefined : config.apiKey,
         vertexai: config.vertexai,
