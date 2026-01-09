@@ -72,6 +72,7 @@ export function handleError(
   config: Config,
   customErrorCode?: string | number,
 ): never {
+  console.error('Error encountered9:', error);
   const errorMessage = parseAndFormatApiError(
     error,
     config.getContentGeneratorConfig()?.authType,
@@ -88,7 +89,7 @@ export function handleError(
       status: 'error',
       error: {
         type: error instanceof Error ? error.constructor.name : 'Error',
-        message: errorMessage,
+        message: errorMessage+"wefewgew",
       },
       stats: streamFormatter.convertToStreamStats(metrics, 0),
     });
